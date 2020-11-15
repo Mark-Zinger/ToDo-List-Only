@@ -1,20 +1,18 @@
-html{
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*, *::before, *::after{
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+html {
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-.wrapper{
+.wrapper {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.header__content{
+.header__content {
   padding: 60px 0px 0px 0px;
   display: flex;
   flex-flow: row nowrap;
@@ -23,15 +21,15 @@ html{
   margin: 0 auto 45px;
 }
 
-.header__title{
-  font-family: 'Roboto';
+.header__title {
+  font-family: "Roboto";
   font-weight: 900;
   font-size: 28px;
   line-height: 41px;
 }
 
-.header__button{
-  font-family: 'Roboto';
+.header__button {
+  font-family: "Roboto";
   margin-left: auto;
   background: #F2F2F2;
   border-radius: 4px;
@@ -40,21 +38,21 @@ html{
 }
 
 .header__button:hover,
-.header__button:focus{
+.header__button:focus {
   outline: none;
   background-color: #23A3FF;
   color: white;
 }
 
-.todo__list{
+.todo__list {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 1280px;  
+  max-width: 1280px;
 }
 
-.todo__item{
+.todo__item {
   position: relative;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
@@ -62,7 +60,7 @@ html{
   margin-bottom: 30px;
 }
 
-.todo__input{
+.todo__input {
   opacity: 0;
   width: 22px;
   height: 22px;
@@ -70,17 +68,17 @@ html{
   z-index: 1;
 }
 
-.todo__task{
+.todo__task {
   padding-left: 36px;
   line-height: 1.5;
 }
 
-.todo__task:hover{
+.todo__task:hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
-.todo__label::before{
+.todo__label::before {
   content: "";
   display: block;
   width: 22px;
@@ -90,7 +88,7 @@ html{
   position: absolute;
 }
 
-.todo__label::after{
+.todo__label::after {
   content: "";
   display: block;
   width: 12px;
@@ -100,47 +98,47 @@ html{
   position: absolute;
   top: 5px;
   left: 5px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.todo__input:checked + .todo__label::after{
+.todo__input:checked + .todo__label::after {
   opacity: 1;
 }
 
-.todo__add-task{
+.todo__add-task {
   text-align: right;
   margin-top: calc(100vh - 35rem);
 }
 
-.todo__button{
+.todo__button {
   background-color: white;
   border: 1px solid white;
   width: 60px;
   height: 60px;
   border-radius: 100%;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-    .img-svg{
-      fill:  #23A3FF;
-    }
+}
+.todo__button .img-svg {
+  fill: #23A3FF;
 }
 
-.todo__button:hover{
+.todo__button:hover {
   background-color: #23A3FF;
   border: 1px solid white;
   width: 60px;
   height: 60px;
   border-radius: 100%;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-    .img-svg{
-      fill: white;
-    }
+}
+.todo__button:hover .img-svg {
+  fill: white;
 }
 
-.modal{
+.modal {
   display: none;
 }
 
-.modal_active{
+.modal_active {
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.1);
@@ -153,14 +151,14 @@ html{
   z-index: 99;
 }
 
-.modal__window{
+.modal__window {
   width: 400px;
   height: 300px;
   background-color: white;
   border-radius: 40px;
 }
 
-.modal__input{
+.modal__input {
   display: block;
   width: 300px;
   padding-bottom: 140px;
@@ -171,17 +169,16 @@ html{
   margin-bottom: 30px;
   border: 2px solid #E6E6E6;
   border-radius: 10px;
-  
 }
 
-.modal__buttons{
+.modal__buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.modal__button{
-  font-family: 'Roboto';
+.modal__button {
+  font-family: "Roboto";
   width: 140px;
   height: 40px;
   border: 0;
@@ -192,16 +189,16 @@ html{
   font-weight: 400;
 }
 
-.modal__button_close{
+.modal__button_close {
   background: #F2F2F2;
 }
 
-.modal__button_add{
+.modal__button_add {
   color: white;
   background: #23A3FF;
 }
 
-::placeholder{
+::placeholder {
   position: block;
   font-weight: 500;
   font-size: 16px;
@@ -211,7 +208,7 @@ html{
 }
 
 @media screen and (max-width: 1290px) {
-  .wrapper{
+  .wrapper {
     padding: 0 40px;
   }
 }

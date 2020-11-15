@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ToDo Only</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__content">
+        <h1 class="header__title">Сегодня</h1>
+        <button class="header__button">Править</button>
+        </div>
+    </div>
+  </header>
+  <section class="todo">
+    <div class="wrapper">
+      <ul class="todo__list">
+        <li class="todo__item">
+          <input class="todo__input" type="checkbox" id="check1"></input>
+            <label class="todo__label" for="check1">
+              <span class="todo__task">Пройти стажировку в Онли</span>
+            </label>
+        </li>
+        <li class="todo__item">
+          <input class="todo__input" type="checkbox" id="check2">
+            <label class="todo__label" for="check2">
+              <span class="todo__task">Побриться</span>
+            </label>
+          </input>
+        </li>
+        <li class="todo__item">
+          <input class="todo__input" type="checkbox" id="check3">
+            <label class="todo__label" for="check3">
+              <span class="todo__task">Купить молоко</span>
+            </label>
+          </input>
+        </li>
+        <li class="todo__item">
+          <input class="todo__input" type="checkbox" id="check4">
+            <label class="todo__label" for="check4">
+              <span class="todo__task">Не забыть забрать сына из садика</span>
+            </label>
+          </input>
+        </li>
+        <li class="todo__item">
+          <input class="todo__input" type="checkbox" id="check5">
+            <label class="todo__label" for="check5">
+              <span class="todo__task">Купить сыр</span>
+            </label>
+          </input>
+        </li>
+      </ul>
+      <div class="todo__add-task">
+        <button class="todo__button">
+          <svg height="22px" width="22px" class="img-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 31.444 31.444" xml:space="preserve">
+<path d="M1.119,16.841c-0.619,0-1.111-0.508-1.111-1.127c0-0.619,0.492-1.111,1.111-1.111h13.475V1.127
+	C14.595,0.508,15.103,0,15.722,0c0.619,0,1.111,0.508,1.111,1.127v13.476h13.475c0.619,0,1.127,0.492,1.127,1.111
+	c0,0.619-0.508,1.127-1.127,1.127H16.833v13.476c0,0.619-0.492,1.127-1.111,1.127c-0.619,0-1.127-0.508-1.127-1.127V16.841H1.119z"
+	/></svg>
+        </button>
+    </div>
+    </div>
+  </section>
+  <div class="modal">
+    <div class="modal__window">
+      <form class="modal__form">
+        <input type="text" class="modal__input" placeholder="Введите текст задачи" id="inputModal">
+        <div class="modal__buttons">
+          <button class="modal__button modal__button_close" type="button" id="closeBtn">
+            Закрыть
+          </button>
+          <button class="modal__button modal__button_add" type="button" id="addBtn">
+            Добавить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/main.js" ></script>  
+</body>
+</html>
