@@ -218,6 +218,12 @@ html{
   .modal_active{
     align-items: flex-end;
   }
+  .modal__input{
+    width: 90vw;
+  }
+  .modal__buttons{
+    justify-content: space-around;
+  }
   .modal__window{
     width: 100vw;
     height: 50vh;
