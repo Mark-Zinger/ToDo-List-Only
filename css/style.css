@@ -45,6 +45,7 @@ html {
 }
 
 .todo__list {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   max-width: 1280px;
@@ -60,6 +61,10 @@ html {
   margin-bottom: 30px;
 }
 
+.todo__label {
+  margin-bottom: 30px;
+}
+
 .todo__input {
   opacity: 0;
   width: 22px;
@@ -69,6 +74,11 @@ html {
 }
 
 .todo__task {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
   padding-left: 36px;
   line-height: 1.5;
 }
@@ -78,7 +88,7 @@ html {
   opacity: 0.5;
 }
 
-.todo__label::before {
+.todo__task:before {
   content: "";
   display: block;
   width: 22px;
@@ -88,26 +98,14 @@ html {
   position: absolute;
 }
 
-.todo__label::after {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  opacity: 0;
-  background: url("../img/check.svg");
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  transition: 0.2s;
-}
-
-.todo__input:checked + .todo__label::after {
-  opacity: 1;
+.todo__input:checked + .todo__task::before {
+  background: url("../img/check.svg") no-repeat center;
 }
 
 .todo__add-task {
-  text-align: right;
-  margin-top: calc(100vh - 35rem);
+  position: absolute;
+  right: 0;
+  margin-top: calc(100vh - 25rem);
 }
 
 .todo__button {
