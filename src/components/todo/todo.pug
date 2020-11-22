@@ -1,0 +1,23 @@
+mixin todo(props)
+    section&attributes(attributes).todo
+        .wrapper
+            .todo__list
+                label(for="check1").todo__label
+                    input#check1(type="checkbox").todo__input
+                    span.todo__task Пройти стажировку в Онли
+                label(for="check2").todo__label
+                    input#check2(type="checkbox").todo__input
+                    span.todo__task Побриться
+                label(for="check3").todo__label
+                    input#check3(type="checkbox").todo__input
+                    span.todo__task Купить молоко
+                label(for="check4").todo__label
+                    input#check4(type="checkbox").todo__input
+                    span.todo__task Не забыть забрать сына из садика
+                label(for="check5").todo__label
+                    input#check5(type="checkbox").todo__input
+                    span.todo__task Купить сыр
+                .todo__add-task
+                    button.todo__button
+                        span.todo__first
+                        span.todo__second

@@ -1,0 +1,9 @@
+mixin modal(props)
+    .modal&attributes(attributes)
+        .wrapper
+            .modal__window
+                .modal__form
+                    input#inputModal(type="text" placeholder="Введите текст задачи").modal__input
+                    .modal__buttons
+                        button#closeBtn(type="button").modal__button.modal__button_close Закрыть
+                        button#addBtn(type="button").modal__button.modal__button_add Добавить

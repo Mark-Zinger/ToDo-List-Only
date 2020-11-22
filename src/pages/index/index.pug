@@ -1,0 +1,11 @@
+extends ../../app/layout
+include ../../components/todo/todo
+include ../../components/modal/modal
+
+block title
+    | Главная
+
+block content
+    main(data-barba="container" data-barba-namespace="index")
+        +todo
+        +modal

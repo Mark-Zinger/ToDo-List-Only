@@ -1,0 +1,25 @@
+import { getComponent } from '../../app/js/component';
+
+const Index = {
+    namespace: '${pageName}',
+    beforeEnter() {
+        // beforeEnter body
+    },
+    enter() {
+        // enter body
+    },
+    afterEnter() {
+        // afterEnter body
+    },
+    beforeLeave() {
+        // beforeLeave body
+    },
+    leave() {
+        // leave body
+    },
+    afterLeave() {
+        // afterLeave body
+    }
+}
+
+export default Index
